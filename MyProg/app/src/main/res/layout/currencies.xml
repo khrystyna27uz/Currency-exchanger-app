@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="1dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/cv"
+        android:gravity="start"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/TextVal_C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Валюта"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_centerVertical="true" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/TextVal_C"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView_ic_green2_C"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="#2f577e" />
+                    <TextView
+                        android:background="#416384"
+                        android:id="@+id/textView_ic_green_C"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linearLayout1">
+                    <TextView
+                        android:id="@+id/TextBid_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Про"
+
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#366028"
+                        android:textSize="12sp"
+                        android:gravity="end"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/TextAsk_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Пок"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#366028"
+                        android:textSize="12sp"
+                        android:gravity="end"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

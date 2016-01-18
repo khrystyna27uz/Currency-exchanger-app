@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/rl_DF"
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:layout_weight="0.42">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHARE"
+            android:textColor="@color/accentColor"
+            android:textSize="17dp"
+            android:id="@+id/buttonShare_DF"
+            android:background="#bfc7cf"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>
