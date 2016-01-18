@@ -2,13 +2,10 @@ package com.example.myprog.Activity;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.SystemClock;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v4.app.Fragment;
@@ -50,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recyclerview);
-        Log.d(LOG_TAG, "onCreate ");
+        Log.d(LOG_TAG, "onCreate");
         if(PhoneLinkMapDetail.isStateInternet(getApplicationContext())) {
 
              Intent intent = new Intent(this, MyService.class);
@@ -92,12 +89,12 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         startService(new Intent(this, MyService.class));
         Calendar cal = Calendar.getInstance();
         Intent intent = new Intent(this, MyService.class);
-        PendingIntent pintent = PendingIntent
+        PendingIntent pintIntent = PendingIntent
                 .getService(this, 0, intent, 0);
 
         AlarmManager alarm = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         alarm.setRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(),
-                1800 * 1000, pintent);
+                1800 * 1000, pintIntent);
         stopService(new Intent(this, MyService.class));
 
     }
