@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.myprog.Currencies;
 import com.example.myprog.R;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -113,7 +114,7 @@ public class GoogleMap extends AppCompatActivity {
         protected List<HashMap<String,String>> doInBackground(String... jsonData) {
 
             List<HashMap<String, String>> places = null;
-            GeocoderJsonParser parser = new GeocoderJsonParser();
+            Currencies.GeocoderJsonParser parser = new Currencies.GeocoderJsonParser();
 
             try{
                 jObject = new JSONObject(jsonData[0]);
