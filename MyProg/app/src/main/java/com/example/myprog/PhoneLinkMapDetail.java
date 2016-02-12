@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 import com.example.myprog.Activity.DetailActivity;
 import com.example.myprog.Activity.GoogleMap;
-import com.example.myprog.Activity.MapActivity;
 import com.example.myprog.db.DBHelper;
 
 import java.io.File;
