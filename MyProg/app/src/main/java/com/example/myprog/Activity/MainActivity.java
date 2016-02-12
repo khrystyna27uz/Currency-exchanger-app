@@ -36,7 +36,7 @@ import com.example.myprog.service.MyService;
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
-    public static String LOG_TAG = "my_log";
+    public static String LOG_TAG = "MY_LOG";
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
     private List<Org> mData = new ArrayList<>();
@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         setContentView(R.layout.recyclerview);
         Log.d(LOG_TAG, "onCreate");
         if(PhoneLinkMapDetail.isStateInternet(getApplicationContext())) {
-
              Intent intent = new Intent(this, MyService.class);
              startService(intent);
             mData = new ArrayList<>();
