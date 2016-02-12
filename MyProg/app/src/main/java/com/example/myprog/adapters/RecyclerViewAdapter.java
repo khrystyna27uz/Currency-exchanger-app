@@ -119,7 +119,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             btnMap.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     PhoneLinkMapDetail phoneLinkMap = new PhoneLinkMapDetail();
-                    phoneLinkMap.Map(mContext, mRegion, mCity, mAddress);
+                    phoneLinkMap.Map(mContext, mRegion, mCity, mAddress, mNameBank);
 
                 }
             });
