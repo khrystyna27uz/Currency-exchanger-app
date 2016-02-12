@@ -13,6 +13,7 @@ import android.support.v4.app.ActivityCompat;
 import android.widget.TextView;
 
 import com.example.myprog.Activity.DetailActivity;
+import com.example.myprog.Activity.GoogleMap;
 import com.example.myprog.Activity.MapActivity;
 import com.example.myprog.db.DBHelper;
 
@@ -50,11 +51,12 @@ public class PhoneLinkMapDetail {
         cr.close();
     }
 
-    public static void Map(Context context, TextView region, TextView city, TextView address) {
-        Intent intent = new Intent(context, MapActivity.class);
+    public static void Map(Context context, TextView region, TextView city, TextView address,TextView nameBank) {
+        Intent intent = new Intent(context, GoogleMap.class);
         intent.putExtra("region", region.getText().toString());
         intent.putExtra("city", city.getText().toString());
         intent.putExtra("address", address.getText().toString());
+        intent.putExtra("nameBank", nameBank.getText().toString());
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
