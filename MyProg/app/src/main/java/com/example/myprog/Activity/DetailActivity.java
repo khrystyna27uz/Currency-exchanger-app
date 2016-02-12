@@ -184,7 +184,7 @@ public class DetailActivity extends AppCompatActivity implements FloatingActions
                 break;
             case R.id.map_AD:
                 PhoneLinkMapDetail map = new PhoneLinkMapDetail();
-               map.Map(this, mRegion, mCity, mAddress);
+               map.Map(this, mRegion, mCity, mAddress, mNameBank);
                 break;
             case R.id.site_AD:
                 PhoneLinkMapDetail link = new PhoneLinkMapDetail();
